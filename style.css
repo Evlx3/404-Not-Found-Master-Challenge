@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap");
+
+*::before,
+*::after,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Inconsolata", monospace;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.main {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6em;
+}
+
+.main-h3 {
+  padding: 1em;
+  font-weight: 700;
+}
+
+.outer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  gap: 6em;
+}
+
+figure {
+  width: 60%;
+  position: relative;
+}
+
+figcaption {
+  position: absolute;
+  top: -10000px;
+}
+
+.inner-section {
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: start;
+  gap: 2em;
+}
+
+.main-h1 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 700;
+}
+
+.main-h1 span {
+  white-space: nowrap;
+}
+
+.main-h4 {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-weight: 400;
+}
+
+.main-button {
+  max-width: 60%;
+  font-size: clamp(0.8rem, 1vw, 1rem);
+  background-color: #333;
+  color: whitesmoke;
+  padding: 1em;
+}
+
+.main-button:hover {
+  cursor: pointer;
+  opacity: 85%;
+}
+
+@media (max-width: 576px) {
+  .main {
+    flex-flow: column;
+    padding: 0;
+  }
+
+  .outer-section {
+    flex-flow: column;
+    column-gap: 1em;
+  }
+}
